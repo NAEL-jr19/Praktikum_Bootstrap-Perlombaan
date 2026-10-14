@@ -1,0 +1,501 @@
+<!doctype html>
+<html lang="id">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Latihan Bootstrap Kireina_3C</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB"
+      crossorigin="anonymous"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css"
+    />
+    <link rel="stylesheet" href="https://jsdelivr.net" />
+  </head>
+  <body>
+    <style>
+      body {
+        background: linear-gradient(
+          135deg,
+          #080a18 10%,
+          #240d75 20%,
+          #080a18 25%,
+          #60287a 30%,
+          #151a38 50%,
+          #080a18 60%,
+          #500872 70%,
+          #080a18 80%,
+          #240d75 90%,
+          #080a18 100%
+        ) !important;
+        color: white;
+        min-height: 100vh;
+      }
+    </style>
+    <section>
+      <!-- Navbar -->
+      <nav
+        class="navbar navbar-expand-lg bg-body-tertiary px-3 shadow"
+        style="background-color: #080a18 !important"
+      >
+        <div class="container-atas">
+          <a class="navbar-brand fw-bold text-white" href="#">Sports Zone</a>
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav nav-pills ms-auto mb-2 mb-lg-0">
+              <ul class="nav nav-pills ms-auto mb-2 mb-lg-0">
+                <li class="nav-item">
+                  <a class="nav-link active" aria-current="page" href="#">
+                    <i class="bi bi-house-door" style="color: #8155ff"></i> Home
+                  </a>
+                </li>
+
+                <li class="nav-item">
+                  <a class="nav-link" href="#olahraga">
+                    <i class="bi bi-trophy" style="color: #8155ff"></i> Olahraga
+                  </a>
+                </li>
+
+                <li class="nav-item">
+                  <a class="nav-link" href="#artikel">
+                    <i class="bi bi-newspaper" style="color: #8155ff"></i>
+                    Artikel
+                  </a>
+                </li>
+
+                <li class="nav-item">
+                  <a class="nav-link" href="#tentang">
+                    <i class="bi bi-info-circle" style="color: #8155ff"></i>
+                    Tentang
+                  </a>
+                </li>
+              </ul>
+            </ul>
+          </div>
+        </div>
+      </nav>
+
+      <!-- Hero Section -->
+      <div
+        id="home"
+        class="bg-info bg-gradient text-white text-center py-5"
+        style="background-color: #080a18 !important"
+      >
+        <div class="container">
+          <div>
+            <span class="badge rounded-pill text-bg-light" text-dark
+              >Semester 3</span
+            >
+          </div>
+          <h1
+            class="bg-h1 bg-color-gradient"
+            style="
+              background: linear-gradient(to right, #fff, #9c7dfb, #8155ff);
+              -webkit-background-clip: text;
+              -webkit-text-fill-color: transparent;
+              background-clip: text;
+              color: transparent;
+              display: inline-block;
+            "
+          >
+            COMPETE WITHOUT LIMITS
+          </h1>
+          <p>
+            Temukan berbagai perlombaan olahraga, tentang kemampuan dini, dan
+            raih prestasimu bersama komunitas Spots Zone.
+          </p>
+          <button type="button" class="btn btn-outline-light">
+            Explore Now <i class="bi bi-arrow-down"></i>
+          </button>
+        </div>
+      </div>
+
+      <!-- Section Olahraga -->
+      <div id="olahraga" class="py-5">
+        <h2 class="text-center mb-4 text-white">Perlombaan Unggulan</h2>
+        <div class="container">
+          <div class="row row-cols-1 row-cols-md-3 g-4">
+            <!-- Card 1 -->
+            <div class="col">
+              <div class="card h-100">
+                <div
+                  class="card-body"
+                  style="
+                    background-image: url(assets/futsal.jpeg);
+                    background-size: cover;
+                    min-height: 250px;
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: flex-end;
+                  "
+                >
+                  <div>
+                    <div
+                      class="text-white"
+                      style="
+                        background-color: rgba(8, 10, 24, 0.65);
+                        padding: 8px 10px;
+                        border-radius: 6px;
+                        width: fit-content;
+                        max-width: 100%;
+                      "
+                    >
+                      <h5 class="card-title fs-6 mb-1">Futsal Championship</h5>
+                      <p class="card-text small mb-2">
+                        Kompetisi futsal antar universitas dengan hadiah
+                        menarik.
+                      </p>
+                    </div>
+                    <button
+                      type="button"
+                      class="btn btn-outline-light"
+                      style="background-color: #8155ff"
+                    >
+                      Lihat Detail <i class="bi bi-arrow-right"></i>
+                    </button>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- Card 2 -->
+            <div class="col">
+              <div class="card h-100">
+                <div
+                  class="card-body"
+                  style="
+                    background-image: url(assets/basket.jpeg);
+                    background-size: cover;
+                    min-height: 250px;
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: flex-end;
+                  "
+                >
+                  <div>
+                    <div
+                      class="text-white"
+                      style="
+                        background-color: rgba(8, 10, 24, 0.65);
+                        padding: 8px 10px;
+                        border-radius: 6px;
+                        width: fit-content;
+                        max-width: 100%;
+                      "
+                    >
+                      <h5 class="card-title fs-6 mb-1">Basketball Cup</h5>
+                      <p class="card-text small mb-2">
+                        Turnamen basket antar komunitas dan tunjukkan skill
+                        terbaikmu.
+                      </p>
+                    </div>
+                    <button
+                      type="button"
+                      class="btn btn-outline-light"
+                      style="background-color: #8155ff"
+                    >
+                      Lihat Detail <i class="bi bi-arrow-right"></i>
+                    </button>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- Card 3 -->
+            <div class="col">
+              <div class="card h-100">
+                <div
+                  class="card-body"
+                  style="
+                    background-image: url(assets/badmin.jpeg);
+                    background-size: cover;
+                    min-height: 250px;
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: flex-end;
+                  "
+                >
+                  <div>
+                    <div
+                      class="text-white"
+                      style="
+                        background-color: rgba(8, 10, 24, 0.65);
+                        padding: 8px 10px;
+                        border-radius: 6px;
+                        width: fit-content;
+                        max-width: 100%;
+                      "
+                    >
+                      <h5 class="card-title fs-6 mb-1">
+                        Badminton Championship
+                      </h5>
+                      <p class="card-text small mb-2">
+                        Turnamen badminton untuk kategori mahasiswa.
+                      </p>
+                    </div>
+                    <button
+                      type="button"
+                      class="btn btn-outline-light"
+                      style="background-color: #8155ff"
+                    >
+                      Lihat Detail <i class="bi bi-arrow-right"></i>
+                    </button>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Alert -->
+      <div class="alert alert-success mt-4 mb-4 w-75 mx-auto" role="alert">
+        Keselamatan dan kesehatan adalah prioritas utama!
+      </div>
+      <br />
+
+      <!-- Pesan -->
+      <section>
+        <div id="contact">
+          <div class="container">
+            <h2 class="text-center mb-4 text-white">Kontak Saya</h2>
+            <form
+              class="mx-auto bg-success p-4 rounded shadow-sm"
+              style="
+                background-color: #080a18 !important;
+                border: 1px solid white;
+                max-width: 500px;
+              "
+            >
+              <!-- Input Nama -->
+              <div class="mb-3">
+                <label for="input-nama" class="form-label text-white"
+                  >Nama</label
+                >
+                <input
+                  type="text"
+                  class="form-control"
+                  id="input-nama"
+                  placeholder="Masukkan nama Anda"
+                  style="
+                    background-color: #9c7dfb;
+                    color: white;
+                    border: 1px solid white;
+                  "
+                />
+              </div>
+
+              <!-- Input Email -->
+              <div class="mb-3">
+                <label for="input-email" class="form-label text-white"
+                  >Email</label
+                >
+                <input
+                  type="email"
+                  class="form-control"
+                  id="input-email"
+                  placeholder="Masukkan email Anda"
+                  style="
+                    background-color: #9c7dfb;
+                    color: white;
+                    border: 1px solid white;
+                  "
+                />
+              </div>
+
+              <!-- Input Kompetisi -->
+              <div class="mb-3">
+                <label for="input-kompetisi" class="form-label text-white">
+                  Kompetisi Peserta
+                </label>
+                <select
+                  class="form-select"
+                  id="input-kompetisi"
+                  placeholder="Pilih Kompetisi"
+                  required
+                  style="background-color: #9c7dfb; border: 1px solid white"
+                >
+                  <option value="" selected disabled hidden>
+                    Pilih Kompetisi
+                  </option>
+                  <option
+                    value="Futsal"
+                    style="background-color: #fff; border: 1px solid #444775"
+                  >
+                    Futsal Championship
+                  </option>
+                  <option
+                    value="Basket"
+                    style="background-color: #fff; border: 1px solid #444775"
+                  >
+                    Basketball Cup
+                  </option>
+                  <option
+                    value="Badminton"
+                    style="background-color: #fff; border: 1px solid #444775"
+                  >
+                    Badminton Open
+                  </option>
+                </select>
+              </div>
+
+              <!-- Kategori Peserta -->
+              <div class="mb-3">
+                <label for="input-kategori" class="form-label text-white">
+                  Kategori Peserta
+                </label>
+                <select
+                  class="form-select"
+                  id="input-kategori"
+                  placeholder="Pilih Kategori"
+                  required
+                  style="background-color: #9c7dfb; border: 1px solid white"
+                >
+                  <option value="" selected disabled hidden>
+                    Pilih Kategori
+                  </option>
+                  <option
+                    value="Individu"
+                    style="background-color: #fff; border: 1px solid #444775"
+                  >
+                    Individu
+                  </option>
+                  <option
+                    value="Tim"
+                    style="background-color: #fff; border: 1px solid #444775"
+                  >
+                    Tim
+                  </option>
+                </select>
+              </div>
+
+              <!-- Input Pesan -->
+              <div class="mb-3">
+                <label for="input-pesan" class="form-label text-white"
+                  >Pesan</label
+                >
+                <textarea
+                  class="form-control"
+                  id="input-pesan"
+                  rows="3"
+                  placeholder="Tuliskan..."
+                  style="background-color: #9c7dfb; border: 1px solid white"
+                ></textarea>
+              </div>
+
+              <!-- Tombol Submit -->
+              <button
+                type="button"
+                class="btn btn-kirim-outline-light"
+                onclick="konfirmasiKirim()"
+                style="background-color: #8155ff; color: #fff !important"
+              >
+                <i class="bi bi-send"></i> Kirim Pesan
+              </button>
+            </form>
+          </div>
+        </div>
+      </section>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-dark text-white text-center py-2 mt-5">
+      <small>&copy; 2026 - Pertemuan 6 Bootstrap - Kireina</small>
+    </footer>
+
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
+      crossorigin="anonymous"
+    ></script>
+
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+
+    <script>
+      function konfirmasiKirim() {
+        Swal.fire({
+          title: "Konfirmasi Pengiriman",
+
+          html: `
+        <div style="
+          width: 90px;
+          height: 90px;
+          border: 3px solid #8155FF;
+          border-radius: 50%;
+          margin: 10px auto 20px;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          color: #B69CFF;
+          font-size: 38px;
+        ">
+          <i class="bi bi-send"></i>
+        </div>
+
+        <p style="
+          color: #FFFFFF;
+          font-size: 18px;
+          font-weight: 600;
+          margin-bottom: 12px;
+        ">
+          Apakah Anda yakin ingin mengirim pesan ini?
+        </p>
+
+        <p style="
+          color: #A5ABC7;
+          font-size: 16px;
+          margin-bottom: 0;
+        ">
+          Pastikan semua data sudah benar sebelum dikirim.
+        </p>
+      `,
+
+          background: "#080A18",
+          color: "#FFFFFF",
+
+          showCloseButton: true,
+          showCancelButton: true,
+          reverseButtons: false,
+
+          confirmButtonText: "Ya, Kirim",
+          cancelButtonText: "Batal",
+
+          confirmButtonColor: "#8155FF",
+          cancelButtonColor: "#151A38",
+
+          buttonsStyling: true,
+          allowOutsideClick: false,
+
+          customClass: {
+            popup: "modal-arena",
+          },
+        }).then((result) => {
+          if (result.isConfirmed) {
+            Swal.fire({
+              title: "Pesan Berhasil Dikirim!",
+              text: "Terima kasih telah menghubungi Sports Zone.",
+              icon: "success",
+              background: "#080A18",
+              color: "#FFFFFF",
+              confirmButtonColor: "#8155FF",
+            });
+          }
+        });
+      }
+    </script>
+  </body>
+</html>
